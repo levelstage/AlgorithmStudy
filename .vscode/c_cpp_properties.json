@@ -1,0 +1,22 @@
+{
+    "configurations": [
+        {
+            "name": "MinGW GCC",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            // 💡 MinGW의 G++ 컴파일러 경로 지정
+            "compilerPath": "C:\\MinGW\\bin\\g++.exe",
+            // C++17 표준과 64비트 GCC 모드 지정 (가장 일반적인 설정)
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "windows-gcc-x64"
+        }
+    ],
+    "version": 4
+}

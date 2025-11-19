@@ -1,7 +1,28 @@
 {
-    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
-    // 기존 특성에 대한 설명을 보려면 가리킵니다.
-    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
-    "configurations": []
+    "configurations": [
+        {
+            "name": "G++ 빌드 및 실행",
+            "type": "cppdbg",
+            "request": "launch", // 💡 실행 모드 (필수 프로퍼티)
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe", // tasks.json이 생성한 .exe 파일 경로
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            
+            // 💡 tasks.json의 레이블과 정확히 일치하는 빌드 작업 지정
+            "preLaunchTask": "C/C++: G++ 파일 빌드", 
+            
+            "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe", // 💡 MinGW GDB 디버거 경로
+            "setupCommands": [
+                {
+                    "description": "gdb에 대한 보기 좋은 출력 사용",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ]
+        }
+    ]
 }
