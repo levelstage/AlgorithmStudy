@@ -1,4 +1,5 @@
 // 13460 구슬 탈출 2
+// 두 동전을 약간 좀 맵게 바꾼 느낌. 그닥 안 어려웠음.
 
 #include <cstdio>
 #include <queue>
