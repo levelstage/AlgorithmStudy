@@ -1,9 +1,9 @@
 // 14003 가장 긴 증가하는 부분 수열 5
+// 그 긴거의 최종진화. 그래도 풀었죠?
 
 #include <cstdio>
 #include <queue>
 #include <stack>
-#include <algorithm>
 
 using namespace std;
 
