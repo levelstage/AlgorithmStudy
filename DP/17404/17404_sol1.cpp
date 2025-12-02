@@ -1,4 +1,5 @@
 // 17404 RGB 거리
+// 평범한 DP 문제였네요
 
 #include<cstdio>
 
