@@ -1,5 +1,6 @@
 // 13334 철로
-// 찾는 게 아니라 안되는 애를 빼는게 핵심이었음;;
+// 들어오는 애를 찾는 게 아니라 안되는 애를 빼는게 핵심!
+
 #include <cstdio>
 #include <vector>
 #include <cmath>
@@ -20,7 +21,7 @@ void input()
     scanf("%d", &d);
     valid_n = n;
     for(int i=0; i<n; i++){
-        int h = t1[i], o=t2[i];
+        int h=t1[i], o=t2[i];
         if(abs(o-h) <= d){
             first.push_back(min(h, o));
             second.push_back(max(h, o));
