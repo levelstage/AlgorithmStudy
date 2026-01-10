@@ -18,8 +18,7 @@ void preprocess()
         int top=i+j;
         if(P[top] == P[j])
         {
-            ++j;
-            K[top] = j;
+            K[top] = ++j;
         }
         else if(j==0) ++i;
         else{
@@ -27,7 +26,7 @@ void preprocess()
             i = top - j;
         }
     }
-    
+    return;
 }
 
 void solve()
@@ -51,6 +50,7 @@ void solve()
             i = top - j;
         }
     }
+    return;
 }
 
 int main()
